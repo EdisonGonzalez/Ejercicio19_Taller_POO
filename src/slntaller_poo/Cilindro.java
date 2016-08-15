@@ -16,11 +16,11 @@ public class Cilindro extends Circulo {
     }
     
     public double AreaC(){
-        return (2*Math.PI*this.getRadio()*altura);
+        return ((2*Math.PI*this.getRadio()*altura)+(2*Math.PI*Math.pow(this.getRadio(), 2)));
     }
     
     public double VolumenC(){
-        return (Math.PI*altura*this.getRadio());
+        return (Math.PI*altura*Math.pow(this.getRadio(),2));
     }
    
 }
